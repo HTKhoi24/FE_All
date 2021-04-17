@@ -1,0 +1,83 @@
+<div class="container">
+  <div class="row">
+    <div class="col-5 mx-auto">
+      <form #signUpForm="ngForm" (submit)="handleSignUp(signUpForm)">
+        <h4 class="display-4">Đăng Ký</h4>
+        <div class="form-group">
+          <label for="">Tài Khoản</label>
+          <input
+            #txtUsername="ngModel"
+            name="taiKhoan"
+            ngModel
+            type="text"
+            class="form-control"
+            required
+          />
+          <div *ngIf="txtUsername.errors">
+            <div *ngIf="txtUsername.errors.required && (txtUsername.touched || txtUsername.dirty)" class="alert alert-danger">
+              *Vui lòng nhập tài khoản
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="">Mật Khẩu</label>
+          <input
+            #txtPassword="ngModel"
+            name="matKhau"
+            ngModel
+            type="password"
+            class="form-control"
+            required
+            minlength="8"
+            maxlength="16"
+          />
+          <div *ngIf="txtPassword.errors && (txtPassword.touched || txtPassword.dirty)">
+            <div *ngIf="txtPassword.errors.required" class="alert alert-danger">
+              *Vui lòng nhập mật khẩu
+            </div>
+            <div
+              *ngIf="
+                txtPassword.errors.minlength || txtPassword.errors.minlength
+              "
+              class="alert alert-danger"
+            >
+              *Mật khẩu từ 8 - 16 kí tự
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="">Họ Tên: </label>
+          <input name="hoTen" ngModel type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="">Email</label>
+          <input
+            #txtEmail="ngModel"
+            name="email"
+            ngModel
+            email
+            type="email"
+            class="form-control"
+          />
+          <div *ngIf="txtEmail.errors">
+            <div *ngIf="txtEmail.errors.email" class="alert alert-danger">
+              *Email không đúng định dạng
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="">Số ĐT</label>
+          <input #txtPhone="ngModel" name="soDt" ngModel type="text" class="form-control" pattern="^[0-9]+$"/>
+          <div *ngIf="txtPhone.errors">
+            <div *ngIf="txtPhone.errors.pattern" class="alert alert-danger">
+              *Vui lòng nhập số
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-success" type="submit" [disabled]="signUpForm.invalid">Đăng Ký</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

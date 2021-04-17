@@ -1,0 +1,29 @@
+.activeBtn{
+    background-color: yellow;
+    color: red;
+}
+.notActiveBtn{
+    background-color: darkblue;
+    color: dimgray;
+}
+.nhanNut{
+    background-color: dimgrey;
+    color: firebrick;
+}
+.opacity{
+    opacity: 0.5;
+    font-size: 15px;
+    border: 1px solid #e05353;
+    background: rgb(159, 231, 11);
+    color: white;
+}
+.thanhCong{
+    display: block;
+    color: yellow;
+    background-color: yellowgreen;
+}
+.thatBai{
+    display: block;
+    color: red;
+    background-color: navy;
+}

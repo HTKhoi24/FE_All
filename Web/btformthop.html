@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>
+			Bài tập Form tổng hợp
+		</title>
+	</head>
+	<body>
+		<div id="container">
+			<form action="abc.php" method="post" style="width:500px; margin:10px auto; background:gray; border-radius:10px; padding-left:30px; padding-right:30px;padding-bottom:30px">
+				<h1 style="text-align:center"> Sign Up </h1>
+				<span style="display: inline-block; background: #20d2d2; color: white; padding: 8px 15px 8px 14px; border-radius: 100%; font-size: 21px;">1</span> 
+				<span style="font-size: 20px; font-weight: bold;">Your basic info</span>
+				<br>
+				<span style="">Name:</span>
+				<br>
+				<input type="text" name="username" placeholder="Input your name" style="margin-top: 12px; margin-bottom: 20px;"></input>
+				<br>
+				<span style="">Email:</span>
+				<br>
+				<input type="text" name="email" placeholder="Input your Email" style="margin-top: 12px; margin-bottom: 20px;"></input>
+				<br>
+				<span style="">Password:</span>
+				<br>
+				<input type="password" name="password" placeholder="Input your password" style="margin-top: 12px; margin-bottom: 20px;"></input>
+				<br>
+				Age:
+				<br>
+				<input type="radio" value="under13" name="age_user"> Under 13</input>
+				<br>
+				<input type="radio" value="over13" name="age_user"> 13 or older</input>
+				<br>
+				<span style="display: inline-block; background: #20d2d2; color: white; padding: 8px 15px 8px 14px; border-radius: 100%; font-size: 21px;">2</span> 
+				<span style="font-size: 20px; font-weight: bold;">Your profile</span>
+				<br>
+				<span style="">Biography:</span>
+				<br>
+				<textarea id="Bio" name="Bio" placeholder="Input your bio here" cols="60"; rows="10"></textarea>
+				<br>
+				<span>Job role:</span>
+				<select name="job" id="jobid">
+					<optgroup label="WEB">
+						<option name="aa">aaaa</option>
+					</optgroup>
+				</select>
+			</form>
+		</div>
+	</body>
+</html>

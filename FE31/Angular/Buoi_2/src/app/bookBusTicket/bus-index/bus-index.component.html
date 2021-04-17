@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <h2>Danh Sách Ghế</h2>
+      <div class="row">
+        <app-seat-item
+          *ngFor="let item of seatArr"
+          [seatItem]="item"
+          (seatEmitter)="handleOutputSeat($event)"
+        ></app-seat-item>
+      </div>
+    </div>
+    <div class="col-4">
+      <h2>Danh Sách Ghế Đã Đặt ({{ chosenSeatArr.length }})</h2>
+      <p class="lead" *ngFor="let item of chosenSeatArr">
+        Ghế: {{ item.SoGhe }}; Giá: ${{ item.Gia }}
+        <span class="text-warning" (click)="handleCancelSeat(item.SoGhe)">
+          [Hủy]
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<input type="text" #inputUsername />
+<button>Get User Name</button>
+

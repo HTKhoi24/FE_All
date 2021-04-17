@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <h2>Danh Sach Sinh Vien</h2>
+            <div class="row">
+                <div class="col-4" *ngFor = "let item of studentArr">
+                    <app-student-item (studentEmitter)="handleOutputStudent($event)" [studentItem]="item"></app-student-item>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <h2>Sinh Vien Duoc Chon</h2>
+            <p class="lead">
+                Tên sinh viên: {{chosenStudent?.name}}
+            </p>
+            <p class="lead">
+                Tuổi: {{chosenStudent?.age}}
+            </p>
+        </div>
+    </div>
+</div>

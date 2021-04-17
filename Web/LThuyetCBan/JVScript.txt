@@ -1,0 +1,54 @@
+Client-Side Script tương tác vs người dùng, thực thi tại trình duyệt
+
+Server-Side Script truy cập hệ thống file trên server, kết nối CSDL, phát sinh nội dung html trẻ về người dùng
+
+JavaScript ngôn ngữ Clien-side Script hoạt động trên trình duyệt, chia sẻ xử lý trong ứng dụng web, tạo hiệu ứng, tương tác cho web.
+
+Nhúng JS vào HTML
+	Trực tiếp
+		<script type="text / javascript">
+		. . .
+		</script>
+	Từ file .js
+		<script src="***.js">. . .</script>
+
+Khi load trang web theo thứ tự từ trên xuống
+Source code sẽ được nhúng vào file html trước khi hoạt động
+đoạn code JS được xử lý cùng lúc vs các đoạn lệnh html. Trừ các hàm chỉ thực hiện khi có lời gọi hàm
+
+Đặt giữa tag head script thực thi ngay khi trang web mở
+Đặt giữa tag body script thực thi khi trang web đang mở
+
+Cách đặt tên biến
+	Bắt đầu bằng 1 chữ cái hoặc dấu _
+	A . . . Z, a . . . z, 0 . . . 9, _ phân biệt HOA, Thường
+
+Khai báo biến
+	 Sử dụng từ var
+		vd : var count = 10, amount;
+	Không cần khai báo biến trước khi sử dụng, biến thật sự tồn tại khi bắt đầu sử dụng lần đầu
+	Biến không cần phải khai báo kiểu dữ liệu
+
+Kiểu dữ liệu
+	Object	var listBooks = new Array(10);	Trước khi sử dụng phải có từ new
+	String	"40"	Rỗng ""
+	Number	0.066218, 12	Chuẩn IEEE 754
+	Boolean	true / false
+	undefined	var myVar;	myVar = undefined
+	null	connection.Close();	connection = null
+
+Đổi kiểu dữ liệu
+	Biến tự đổi kiểu dữ liệu khi giá trị mà nó lưu trữ thay đổi
+	Có thể cộng 2 biến khác kiểu dữ liệu
+	parseInt(), parseFloat() Đổi kiểu dữ liệu chuỗi sang số
+
+Hàm
+	Khai báo chung	function Tên_hàm(thamso1, thamso2,. . . )
+			{
+			}
+
+	Có giá trị trả về	function Tên_hàm(thamso1, thamso2,...)
+				{
+					return value;
+				}
+

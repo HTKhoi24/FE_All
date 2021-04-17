@@ -1,0 +1,16 @@
+@mixin styleText($fs, $fw, $color){
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+@mixin respond-to($breakpoint){
+    @if map-has-key($map: $breakpoints, $key: $breakpoint){
+        $value: map-get($map: $breakpoints, $key: $breakpoint);
+        @media screen and (max-width: $value){
+            @content;
+        }
+    }
+    @else{
+        @warn "breakpoint khong ton tai trong breakpoints";
+    }
+}

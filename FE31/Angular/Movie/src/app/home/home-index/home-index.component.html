@@ -1,0 +1,8 @@
+<div class="container">
+    <h1 class="display-4 text-center">Danh Sách Phim</h1>
+    <div class="row">
+        <div class="col-3" *ngFor = "let item of movieList">
+            <app-movie-item [movieItem] = "item"></app-movie-item>
+        </div>
+    </div>
+</div>

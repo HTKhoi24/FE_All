@@ -1,0 +1,9 @@
+<button
+  class="btn btn-secondary m-2"
+  [ngClass]="{'btn-disabled':seatItem.TrangThai, 'btn-success': isChosen}"
+  style="width: 40px; height: 40px;"
+  (click)="handleChooseSeat()"
+  [disabled]="seatItem.TrangThai"
+>
+  {{ seatItem.SoGhe }}
+</button>

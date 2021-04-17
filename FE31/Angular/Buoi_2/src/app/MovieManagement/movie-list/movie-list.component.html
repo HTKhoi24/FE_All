@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+            <h1 class="display-4 text-center">Danh Sách Phim</h1>
+            <button mat-fab color="warn" data-toggle="modal" data-target="#movieModal">
+                <mat-icon aria-hidden="false" aria-label="Add icon">add</mat-icon>
+            </button>
+        </div>
+        <div class="col-4" *ngFor="let item of movieList">
+            <app-movie-item [movieItem] = "item"></app-movie-item>
+        </div>
+    </div>
+</div>
+
+<app-movie-modal></app-movie-modal>

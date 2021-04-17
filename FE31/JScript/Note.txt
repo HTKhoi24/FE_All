@@ -1,0 +1,5 @@
+Client -> request -> server
+->re . . .
+đầu tiên là -> html -> parse html
+-> css -> parse css
+->script js

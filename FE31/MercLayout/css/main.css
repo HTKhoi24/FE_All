@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px; }
+
+.container {
+  max-width: 1300px !important; }
+
+.header {
+  background-color: black; }
+  .header .header__provider .provider-items {
+    letter-spacing: 1px;
+    margin: 0 10px; }
+    .header .header__provider .provider-items a {
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: normal;
+      color: #FFFFFF; }
+    .header .header__provider .provider-items i {
+      width: 15px;
+      height: 18px;
+      border: 1.5px solid #FFFFFF;
+      line-height: 15px;
+      font-size: 10px;
+      text-align: center; }
+    .header .header__provider .provider-items:hover a {
+      color: #00ADEF; }
+    .header .header__provider .provider-items:hover i {
+      border: 1.5px solid #00ADEF; }
+  .header .header__provider .provider-deusch {
+    margin-right: 25px; }
+  .header .header__navbar .navbar-logo .navbar-brand .brand-logo {
+    margin: 0 18px 10px; }
+  .header .header__navbar .navbar-nav .nav-item {
+    margin: 0px 16px; }
+    .header .header__navbar .navbar-nav .nav-item .nav-link {
+      font-size: 14px;
+      font-weight: normal;
+      color: #FFFFFF; }
+    .header .header__navbar .navbar-nav .nav-item:hover .nav-link {
+      color: #00ADEF; }
+    .header .header__navbar .navbar-nav .nav-item:hover .nav-item-vehicle {
+      color: #FFFFFF; }
+  .header .header__navbar .navbar-nav .active .nav-link {
+    color: #00ADEF; }
+
+.myCarousel .carousel-inner .carousel-item {
+  height: 500px;
+  position: relative; }
+  .myCarousel .carousel-inner .carousel-item .carousel-item__caption {
+    position: absolute;
+    top: 10%;
+    left: 8%; }
+    .myCarousel .carousel-inner .carousel-item .carousel-item__caption a {
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: normal;
+      color: #FFFFFF; }
+    .myCarousel .carousel-inner .carousel-item .carousel-item__caption::before {
+      content: '';
+      display: inline-block;
+      height: 2px;
+      width: 60px;
+      background-color: #FFFFFF;
+      margin-bottom: 20px; }
+    .myCarousel .carousel-inner .carousel-item .carousel-item__caption button {
+      border-radius: 0;
+      border: 1px solid #202020 !important; }
+  .myCarousel .carousel-inner .carousel-item .carousel-item__info {
+    position: absolute;
+    bottom: 5%;
+    left: 8%; }
+    .myCarousel .carousel-inner .carousel-item .carousel-item__info p {
+      font-size: 13px;
+      font-weight: normal;
+      color: #FFFFFF; }
+.myCarousel .carousel-inner .item-1 {
+  background: url("../img/crs-1.jpeg") no-repeat center center;
+  background-size: cover; }
+.myCarousel .carousel-inner .item-2 {
+  background: url("../img/crs-2.jpeg") no-repeat center center;
+  background-size: cover; }
+.myCarousel .carousel-inner .item-3 {
+  background: url("../img/crs-3.jpg") no-repeat top center;
+  background-size: cover; }
+  .myCarousel .carousel-inner .item-3 .carousel-item__caption a {
+    font-size: 30px;
+    font-weight: normal;
+    color: #333333; }
+  .myCarousel .carousel-inner .item-3 .carousel-item__caption::before {
+    background-color: #333333; }
+.myCarousel .carousel-inner .item-4 {
+  background: url("../img/crs-4.jpeg") no-repeat center center;
+  background-size: cover; }
+.myCarousel .carousel-inner .item-5 {
+  background: url("../img/crs-5.jpeg") no-repeat center center;
+  background-size: cover; }
+.myCarousel .carousel-inner .item-6 {
+  background: url("../img/crs-6.jpeg") no-repeat center center;
+  background-size: cover; }
+
+.myWelcome .welcome__text {
+  font-size: 13px;
+  font-weight: normal;
+  color: #FFFFFF; }
+
+/*# sourceMappingURL=main.css.map */

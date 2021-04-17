@@ -1,0 +1,43 @@
+Tham khảo
+	w3school
+	cssbasics
+	
+	jsbin.com
+
+Cú pháp
+	<style>
+		p (selector) {
+				color: red;
+				font-size:14px; }
+	</style>
+
+ID Selector 
+	Chỉ áp dụng cho đúng ID được khai báo
+	# tên ID {
+		. . . }
+
+Element Selector
+	Tất cả tag cùng tên
+	<style>
+		p (selector) {
+				color: red;
+				font-size:14px; }
+	</style>
+
+Class Selector
+	Áp dụng cho các tag cùng class
+	.Selector {
+		. . . }
+
+Độ ưu tiên ID -> Element
+
+Kết hợp ID vs Class
+	Element .Class {
+		. . . }
+
+Các loại CSS
+	Inline Style Sheet	Định nghĩa style trong tag 
+	Internal Style Sheet (Embedding Style Sheet)	Định nghĩa style trong thẻ head, ảnh hưởng toàn bộ
+	External Style Sheet	Đĩnh nghĩa style trong file có đuôi .CSS *** nên sử dụng
+		<link rel="stylesheet" href="URL" type="text/css">
+	

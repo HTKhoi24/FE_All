@@ -1,0 +1,21 @@
+thường gồm 7 phần chính
+Base
+	reset cho các phần như display block,.... thay đổi các định nghĩa sẵn có
+	normalize / customize để chỉnh sửa các thư viện, hoặc đè lên code của thư viện
+Component Các thành phần dùng chung của web, thường nhỏ
+	button
+	input
+Helper	chứa các file quan trọng, thường dùng chung toàn web
+	variable	các biến dùng chung cho toàn web
+	mixin
+	extend
+Layout	chứa các phần dùng chung mà lớn hơn
+	header
+	footer
+	. . .
+Page	thường dùng cho các web có nhiều trang
+	Home
+	...
+Theme	đặc biệt các web bán hàng, như tiki, tới mùa thì sẽ thay đổi giao diện, chủ yếu màu sắc
+
+Vendor chứa file sass của thư viện

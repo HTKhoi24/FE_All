@@ -1,0 +1,7 @@
+<div class="card p-3 mb-2">
+    <img [src]="movieItem.hinhAnh" alt="" style="width: auto; height: 300px;">
+    <p>{{movieItem.tenPhim | uppercase}}</p>
+    <p>{{movieItem.moTa | shorten: 50}}</p>
+    <p>{{today | date: 'short'}} </p>
+    <a class="btn btn-success" routerLink = "/detail/{{movieItem.maPhim}}">Mua Vé</a>
+</div>

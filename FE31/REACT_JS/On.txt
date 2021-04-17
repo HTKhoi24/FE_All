@@ -1,0 +1,46 @@
+Gồm có 2 loại component chính là class vs function
+	Class	this.state
+		this.setState
+
+		this.props
+		LifeCycle
+			Mount
+				constructor
+				render
+				ComponentDidmount
+			Update
+				ComponentDidUpdate
+
+	Function	[state, setState] = useState()
+
+			Function(props)		props.
+
+			LifeCycle
+				useEffect	[a] <b], không có tham số chạy 1 lần, rỗng chạy vô hạn
+
+REDUX
+	HOC
+
+	Connect		mapStatetoProps
+			mapDispatchtoProps
+	connet (map...) (Component)
+
+	Hooks
+		useSelector ~ mapState
+		useDispatch ~ mapDispatch
+
+Gồm action, constant, reducer có thể có nhiều cái reducer
+nhưng bắt buộc chỉ có 1 reducer root để chứa các reduer khác và để import vào index.js
+Middlesware để can thiệp vào quá trình đẩy dữ liệu lên store do thunk tạo ra
+để xử lý API, support 2 thành phần quan trọng là dispatch getState
+dispatch để đẩy dữ liệu vào Store và getState để lấy dữ liệu từ store
+redux thunk
+REDUX SAGA middleware
+
+HOC nhận vào 1 component và trả lại 1 component mới
+Renderprops
+Routing
+
+phân chia layout, sử dụng HOC để tạo bảo vệ, điều kiện render
+
+setState là phương thức bất đồng bộ

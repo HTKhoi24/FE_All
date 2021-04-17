@@ -1,0 +1,20 @@
+<h1 *ngIf="isShowTitle; else elseContent">Cybersoft</h1>
+
+<ng-template #elseContent>
+  <h1>Cybercore</h1>
+</ng-template>
+
+<select (change)="handleChangeMonth($event)">
+    <option [value]="i + 1" *ngFor="let item of monthArr; let i = index">
+        {{ item }}
+    </option>
+ 
+</select>
+
+
+<div class="ml-4" [ngSwitch]="month">
+  <p *ngSwitchCase="1">Tháng 1 có 31 ngày</p>
+  <p *ngSwitchCase="2">Tháng 2 có 28 ngày</p>
+  <p *ngSwitchCase="3">Tháng 3 có 30 ngày</p>
+  <p *ngSwitchCase="4">Tháng 4 có 30 ngày</p>
+</div>

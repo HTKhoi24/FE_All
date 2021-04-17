@@ -1,0 +1,38 @@
+.footer{
+    margin-top: $mg-2;
+    border-bottom: 3px solid $color-red-0;
+    .footer__helper{
+        margin: 0 $mg-1;
+        border-bottom: 1px solid #dedfe0;
+        .helper{
+            .helper__list{
+                list-style: none;
+                a{
+                    @include text(#007791, $fs-1, $fw-normal);
+                    margin-bottom: $mg-0;
+                    text-decoration: none;
+                    margin-bottom: 5px;
+                }
+                .helper__item{
+                    @include text(#007791, $fs-0, $fw-bold);
+                }
+            }
+        }
+    }
+    .copy-right{
+        padding: $pd-2;
+        .copy-by{
+            align-self: center;
+            @include text($color-black-light, $fs-0, $fw-normal);
+        }
+        .copy-terms{
+            align-self: center;
+            a{
+                @include text(#007791, $fs-0, $fw-normal);
+                margin-right: $mg-0 + 3;
+                text-decoration: none;
+                margin-right: $mg-1;
+            }
+        }
+    }
+}

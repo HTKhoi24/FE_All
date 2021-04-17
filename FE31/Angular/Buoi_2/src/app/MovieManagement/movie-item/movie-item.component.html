@@ -1,0 +1,9 @@
+<div class="card p-2 mb-3">
+    <img [src]="movieItem.image" >
+    <p class="lead">Tên Phim: {{movieItem.name}}</p>
+    <p>Mô tả: {{movieItem.description}}</p>
+    <div class="d-flex justify-content-around">
+        <button mat-raised-button color="accent">Cập Nhật</button>
+        <button mat-raised-button color="warn" (click) = "handleDeleteMovie()">Xóa</button>
+    </div>
+</div>

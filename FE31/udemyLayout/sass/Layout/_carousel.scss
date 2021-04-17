@@ -1,0 +1,5 @@
+.udemyCarousel{
+    .searchForm{
+        @include styleSearch($color-white-0,$color-white-0,$color-white-0,$color-white-0);
+    }
+}

@@ -1,0 +1,25 @@
+Học viên
+	user thông tin đăng nhập, để hiển thị thông tin
+
+Home
+	LayDanhSachKhoaHoc: API để lấy tất cả các danh sách khóa học và hiển thị ra
+	LayDanhMucKhoaHoc: API là filter để lấy các danh mục khóa học để người dùng có thể chọn hiển thị theo ý muốn
+	hoặc có thể sử dụng LayDanhSachKhoaHoc_phanTrang
+	LayKhoaHocTheoDanhMuc: API để hiển thị khóa học theo danh mục
+
+Course-detail
+	course/ :id
+	LayThongTinKhoaHoc để lấy chi tiết khóa học
+
+trang Admin
+	LayDanhSachKhoaHoc hiển thị dạng table để có thể thêm xóa sửa,		tạo 1 trang như admin/courses-management
+	XoaKhoaHoc, CapNhatKhoaHoc
+	GhiDanhKhoaHoc
+	có thể có thêm button để chuyển sang trang danh sách học viên xài LayDanhSachHocVienKhoaHoc
+
+admin/courses/user/:id khóa học 
+	danh sách học viên có HuyGhiDanh API
+
+admin/users
+	LayDanhsachNguoiDung
+	thêm button để xài API LayDanhSachKhoaHocChoXetDuyet của user đó

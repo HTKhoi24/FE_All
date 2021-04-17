@@ -1,0 +1,29 @@
+h1 {
+  color: white;
+  background-color: red; }
+
+.content h2 {
+  color: white;
+  background-color: red; }
+.content button {
+  background-color: red; }
+  .content button:hover {
+    background-color: yellow; }
+
+.content2 h2 {
+  color: white;
+  background-color: red; }
+.content2 button {
+  background-color: red; }
+  .content2 button:hover {
+    background-color: yellow; }
+
+.heading2 h2 {
+  color: white;
+  background-color: yellow; }
+
+.heading2 h2 {
+  color: white;
+  background-color: red; }
+
+/*# sourceMappingURL=index.css.map */

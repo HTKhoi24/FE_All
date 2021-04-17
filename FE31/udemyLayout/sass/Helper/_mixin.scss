@@ -1,0 +1,56 @@
+@mixin styleText($fs, $fw, $color){
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+
+@mixin styleButton($bg-color, $border, $pd-top-bottom, $pd-right-left) {
+    background-color: $bg-color;
+    border: 1px solid $border;
+    padding: $pd-top-bottom $pd-right-left;
+}
+
+@mixin hoverButton($bg-color, $color, $border) {
+    background-color: $bg-color;
+    color: $color;
+    border: 1px solid $border;
+}
+
+@mixin styleSearch($bg-color,$border,$bg-focus,$border-focus) {
+    .input-group{
+        background-color: $bg-color;
+        border: 1px solid $border;
+        .form-control{
+            background-color: transparent;
+            border: 1px solid transparent;
+            &:focus{
+                outline: none;
+                box-shadow: none;
+                background-color: $bg-focus;
+                border-top: 1px solid $border-focus;
+                border-bottom: 1px solid $border-focus;
+                border-left: 1px solid $border-focus;
+
+                & + .input-group-append{
+                    .input-group-text{
+                        background-color: $bg-focus;
+                        border-top: 1px solid $border-focus;
+                        border-bottom: 1px solid $border-focus;
+                        border-right: 1px solid $border-focus;
+                        &:hover{
+                            @include hoverButton($color-red-0, $color-white-0, $color-red-0)
+                        }
+                    }
+                }
+            }
+        }
+        .input-group-text{
+            background-color: transparent;
+            border: 1px solid transparent;
+            color: $color-red-0;
+            &:hover{
+                @include hoverButton($color-red-0, $color-white-0, $color-red-0)
+            }
+        }
+    }
+}

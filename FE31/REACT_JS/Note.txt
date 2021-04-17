@@ -1,0 +1,43 @@
+State 
+	Khởi tạo trong Component
+	Quản lý trạng thái
+	this.setState
+	chỉ hoạt động trong Component
+
+Props
+	Truyền từ Component cha sang Component con
+	Chỉ nên thay đổi trong Cha, ko nên thay đổi trong con
+	Parent	name = "a"
+	<Child name = {name}>	this.props.name		chỉ thay đổi Cha thôi
+
+
+Kiểm tra Object rỗng
+	obj = {}
+	Object.keys(obj)
+	
+	vd: obj1 = {
+			a: 1,
+			b: 2,
+			c: 3
+		}
+	obj1.length
+
+Trang we tham khảo
+	mozilla javascript		https://developer.mozilla.org/en-US/
+
+
+Nên chia nhỏ Component ra, tốt nhất là 1 component chỉ làm 1 chức năng
+
+
+VÒNG ĐỜI REACT
+ComponentDidMount	gọi API, gọi localStorage, setTimeout, set Internal, get External
+ComponentDidUpdate
+ComponentWillUnmount
+
+
+thư viện cho react thay thế bootstrap 4
+reactstrap
+meterial UI
+Ant Design
+
+PureComponent sẽ so sánh props mới và props cũ để render lại phần thay đổi

@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row">
+    <div class="col-5 mx-auto">
+      <form #signInForm="ngForm" (submit)="handleSignIn(signInForm)">
+        <h4 class="display-4">Đăng Nhập</h4>
+        <div class="form-group">
+          <label for="">Tài Khoản</label>
+          <input
+            #txtUsername="ngModel"
+            ngModel
+            name="taiKhoan"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div *ngIf="txtUsername.errors">
+            <div
+              *ngIf="
+                txtUsername.errors.required &&
+                (txtUsername.touched || txtUsername.dirty)
+              "
+              class="alert alert-danger"
+            >
+              *Vui lòng nhập tài khoản
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="">Mật Khẩu</label>
+          <input
+            #txtPassword="ngModel"
+            ngModel
+            name="matKhau"
+            type="password"
+            class="form-control"
+            required
+          />
+          <div *ngIf="txtPassword.errors">
+            <div
+              *ngIf="
+                txtPassword.errors.required &&
+                (txtPassword.touched || txtPassword.dirty)
+              "
+              class="alert alert-danger"
+            >
+              *Vui lòng nhập mật khẩu
+            </div>
+          </div>
+        </div>
+        <div class="form-group text-center">
+          <button type="submit" class="btn btn-success">Đăng nhập</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

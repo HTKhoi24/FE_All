@@ -1,0 +1,80 @@
+$color-red:red;
+$color-white:white;
+
+
+h1{
+    color: $color-white;
+    background-color: $color-red;
+}
+
+// parent selector
+
+.content{
+    h2{
+        color: $color-white;
+        background-color: $color-red;
+    }
+    button{
+        background-color: $color-red;
+        &:hover{ // dau va la dai dien cho button hoac 1 thành phần nào đó trc do
+            background-color: yellow;
+        }
+    }
+}
+
+// Extend tinh ke thua
+
+// .content2{
+//     @extend .content;
+// }
+
+// placeholder mot phan de xai chung cho cac class
+
+%content{
+    h2{
+        color: $color-white;
+        background-color: $color-red;
+    }
+    button{
+        background-color: $color-red;
+        &:hover{ // dau va la dai dien cho button hoac 1 thành phần nào đó trc do
+            background-color: yellow;
+        }
+    }
+}
+
+.content2{
+    @extend %content;
+}
+
+// Mixin
+// Khong co tham so truyen vao
+@mixin styleHeading{
+    h2{
+        color: white;
+        background-color: yellow;
+    }
+}
+
+.heading2{
+    @include styleHeading();
+}
+
+// Co tham so truyen vao
+@mixin styleHeading2($color, $bgColor) {
+    h2{
+        color: $color;
+        background-color: $bgColor;
+    }
+    
+}
+
+.heading2{
+    @include styleHeading2($color-white, $color-red);
+}
+
+// for, while, if, else
+@function fun1($color){
+    $value: $color;
+    @return $value;
+}

@@ -1,0 +1,58 @@
+.myComment{
+    padding: 30px;
+    margin-top: $mg-2;
+    background-color: $color-gray-5;
+    .comment__Item{
+        margin-bottom: $mg-1;
+        .comment__user{
+            align-items: center;
+            padding: $pd-1;
+            img{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                margin-right: $mg-1;
+            }
+            h4{
+                @include text($color-black-0, $fs-0, $fw-bold);
+            }
+        }
+        p{
+            padding: $pd-0 $pd-1 $pd-1;
+        }
+    }
+    .trust-by{
+        h4{
+            @include text($color-black-0, $fs-1, $fw-normal);
+        }
+        .brands{
+            width: 80%;
+            margin: auto;
+            img{
+                margin-bottom: $mg-1;
+            }
+        }
+    }
+    .teach-on{
+        width: 80%;
+        margin: auto;
+        .teach-on__item{
+            padding: $pd-2;
+            a{
+                @include text($color-black-light, $fs-2, $fw-bold);
+            }
+            button{
+                padding: $pd-0 + 3;
+            }
+        }
+        .teach-on__item-left{
+            border-right: 1px solid #dedfe0;
+        }
+        @include respond-to('medium'){
+            .teach-on__item-left{
+                border-right: none;
+                border-bottom: 1px solid #dedfe0;
+            }
+        }
+    }
+}

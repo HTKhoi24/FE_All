@@ -1,0 +1,76 @@
+Các thẻ cơ bản
+
+<hr> tạo đường kẻ ngang
+	align canh lề
+	width chiều dài
+	size bề rộng
+	noshade không bóng
+
+<img> chèn hình ảnh
+	src Đường dẫn tới file ảnh ( nên là tương đối )
+	alt Chú thích cho hình ( khi hình ko thể hiển thị)
+	border Độ dày nét viền quanh ảnh
+
+Đặt ảnh nền cho web
+	<body background=" đường dẫn hình ">
+
+Tag về danh sách 
+	Ds có thứ tự <OL>	phần tử <Li>
+	Ds ko có thứ tự <UL>	phần tử <Li>
+	Ds tự định nghĩa <DL>	phần tử <Dt>, <Di>
+	Dạng khác <menu>, <dir>
+
+<OL type="a">
+	<li>apples</li>				a. apples
+	<li>bananas</li>			b. bananas
+	<li>lemons</li>				c. lemons
+</OL>
+
+<ol>
+	<li type="a"> apples </li>		a. apples
+	<li type="A"> bananas </li>		B. bananas
+</ol>
+
+<ol start="10" type="a">
+</ol>
+
+<li value="3"></li>
+
+<ul type="disc">
+</ul>
+
+Tag liên kết
+<a> anchor
+<a href="URL" target="..."> Linked content </a>
+	name tải trang web vào frame có tên Name
+	_blank tải trang web vào cửa sổ mới
+	_parent tải trang web vào cửa sổ cha
+	_sel tải trang web vào chính cửa sổ hiện hành
+	_top tải trang web vào cửa sổ cao nhất
+
+các loại liên kết
+	ngoại External link
+	nội Internal link	<a name="TenViTri"> Vi tri bat dau </a> 	<a href="#TenViTri"> Text dai dien </a>
+	Email	<a href="mailto:emailAddress"> Liên hệ Admin </a>
+
+Địa chỉ URL
+	/ Trở về thư mục gốc website
+	./ Thư mục hiện tại của trang web sử dụng link
+	../ Quay ra thư mục cha / đi ngược lại 1 cấp thư mục
+
+thẻ kẻ bảng
+	<table> khởi tạo bảng
+	<tr> khởi tạo dòng, thẻ con <table>
+	<th> khởi tạo ô tiêu đề, thẻ con <tr>
+	<td> khởi tạo ô, thẻ con <tr>
+thuộc tính
+	colspan giãn cột giống merge
+	rowspan giãn dòng
+	background ảnh nền
+	bgcolor màu nền
+	Align gióng hàng ngang chữ
+	valign gióng hàng dọc chữ
+	Cellpadding khoảng cách biên tới nội dung
+	Cellspacing khoảng cách giữa các ô
+
+Thẻ div (division)

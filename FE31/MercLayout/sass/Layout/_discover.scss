@@ -1,0 +1,43 @@
+.myDiscover{
+    background-color: $color-black-2;
+    .discover-content{
+        .discover__items{
+            h3{
+                @include styleText($fs-3 + 6, $fw-normal, $color-white);
+                padding-bottom: 40px;
+                border-bottom: 1px solid $color-grey-2;
+                margin-bottom: $mg-1;
+            }
+            &::before{
+                content: '';
+                display: inline-block;
+                height: 2px;
+                width: 60px;
+                background-color: $color-white;
+                margin-bottom: $mg-1 +2;
+            }
+            p{
+                padding: 2px;
+                margin-bottom: 0;
+                transition: all .5s;
+                a{
+                    text-decoration: none;
+                    @include styleText($fs-1 + 2, $fw-normal, $color-grey-3);
+                }
+                &:hover{
+                    a{
+                        text-decoration: none;
+                    @include styleText($fs-1 + 2, $fw-normal, $color-blue-1);
+                    }
+                }
+            }
+        }
+    }
+    @include respond-to('large'){
+        .discover-content{
+            .discover__items{
+                padding: 20px !important;
+            }
+        }
+    }
+}

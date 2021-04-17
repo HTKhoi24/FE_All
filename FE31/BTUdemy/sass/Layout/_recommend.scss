@@ -1,0 +1,62 @@
+.myRecommend{
+    background-color: $color-black-0;
+    width: 100%;
+    text-align: center;
+    &::before{
+        content: '';
+        display: block;
+        width: 100%;
+        background: linear-gradient(to right, $color-purple, $color-red-2);
+        height: 5px;
+    }
+    .recommend__items{
+        width: 100%;
+        margin: $mg-1 + 5 auto;
+        .recommend__icon{
+            color: $color-white-0;
+            font-size: 30px;
+            margin: 20px;
+            align-items: center;
+            padding: $pd-2;
+        }
+        .recommend__content{
+            color: $color-white-0;
+            font-size: 30px;
+            margin: 20px;
+            align-items: center;
+            .content__icon-left{
+                text-align: right;
+            }
+            .content__icon-right{
+                text-align: left;
+            }
+            .recommend__text{
+                h3{
+                    @include text($color-white-0, $fs-2, $fw-bold);
+                    margin-bottom: $mg-1 + 6;
+                }
+                p{
+                    @include text($color-white-0, $fs-0, $fw-normal);
+                    margin-bottom: $mg-2 - 1;
+                }
+                .btn--red{
+                    font-size: $fs-0;
+                    padding: $pd-1 $pd-2;
+                }
+            }
+        }
+    }
+    @include respond-to('large'){
+        .recommend__items{
+            .recommend__icon{
+                display: none;
+            }
+        }
+        .recommend__content{
+            .content__icon-left, .content__icon-right{
+                display: none;
+            }
+            padding-bottom: $pd-1;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+trang chủ bootstrap : https://getbootstrap.com/docs/4.3/getting-started/introduction/
+
+class của bootstrap
+container: luôn luôn cách đều 2 bên vs max-width thường là 1140px
+container-fluid: full màn hình luôn
+
+web accessibility
+
+grid có tất cả 12 cột
+col -* -*

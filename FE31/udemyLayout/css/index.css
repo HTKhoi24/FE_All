@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px; }
+
+.ude-btnWhite {
+  background-color: #fff;
+  border: 1px solid #686f7a;
+  padding: 11px 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #686f7a; }
+  .ude-btnWhite:hover {
+    background-color: #fff;
+    color: black;
+    border: 1px solid black; }
+
+.ude-btOrange {
+  background-color: #ec5252;
+  border: 1px solid #ec5252;
+  padding: 11px 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #f2f3f5; }
+  .ude-btOrange:hover {
+    background-color: #992337;
+    color: #f2f3f5;
+    border: 1px solid #992337; }
+
+.header {
+  font-size: 13px;
+  font-weight: normal;
+  color: #505763; }
+  .header .navbar {
+    width: 95%;
+    margin: 0 auto; }
+  .header .header__left {
+    display: flex;
+    align-items: center; }
+    .header .header__left .navbar-brand {
+      flex-grow: .5; }
+      .header .header__left .navbar-brand img {
+        width: 110px; }
+    .header .header__left .categories {
+      flex-grow: .5; }
+    .header .header__left .searchForm {
+      flex-grow: 6; }
+      .header .header__left .searchForm .input-group {
+        background-color: #f2f3f5;
+        border: 1px solid #f2f3f5; }
+        .header .header__left .searchForm .input-group .form-control {
+          background-color: transparent;
+          border: 1px solid transparent; }
+          .header .header__left .searchForm .input-group .form-control:focus {
+            outline: none;
+            box-shadow: none;
+            background-color: #fff;
+            border-top: 1px solid #f2f3f5;
+            border-bottom: 1px solid #f2f3f5;
+            border-left: 1px solid #f2f3f5; }
+            .header .header__left .searchForm .input-group .form-control:focus + .input-group-append .input-group-text {
+              background-color: #fff;
+              border-top: 1px solid #f2f3f5;
+              border-bottom: 1px solid #f2f3f5;
+              border-right: 1px solid #f2f3f5; }
+              .header .header__left .searchForm .input-group .form-control:focus + .input-group-append .input-group-text:hover {
+                background-color: #ec5252;
+                color: #fff;
+                border: 1px solid #ec5252; }
+        .header .header__left .searchForm .input-group .input-group-text {
+          background-color: transparent;
+          border: 1px solid transparent;
+          color: #ec5252; }
+          .header .header__left .searchForm .input-group .input-group-text:hover {
+            background-color: #ec5252;
+            color: #fff;
+            border: 1px solid #ec5252; }
+
+.udemyCarousel .searchForm .input-group {
+  background-color: #fff;
+  border: 1px solid #fff; }
+  .udemyCarousel .searchForm .input-group .form-control {
+    background-color: transparent;
+    border: 1px solid transparent; }
+    .udemyCarousel .searchForm .input-group .form-control:focus {
+      outline: none;
+      box-shadow: none;
+      background-color: #fff;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      border-left: 1px solid #fff; }
+      .udemyCarousel .searchForm .input-group .form-control:focus + .input-group-append .input-group-text {
+        background-color: #fff;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff; }
+        .udemyCarousel .searchForm .input-group .form-control:focus + .input-group-append .input-group-text:hover {
+          background-color: #ec5252;
+          color: #fff;
+          border: 1px solid #ec5252; }
+  .udemyCarousel .searchForm .input-group .input-group-text {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #ec5252; }
+    .udemyCarousel .searchForm .input-group .input-group-text:hover {
+      background-color: #ec5252;
+      color: #fff;
+      border: 1px solid #ec5252; }
+
+/*# sourceMappingURL=index.css.map */

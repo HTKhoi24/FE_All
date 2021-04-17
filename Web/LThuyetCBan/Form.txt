@@ -1,0 +1,74 @@
+HTML FORM dùng để nhập liệu từ phía người dùng
+<form name="" action="" method=""></form>
+	name tên form
+	action chỉ định trang web nhận xử lý thông tin
+	method phương thức chuyển dữ liệu POST,GET
+
+textview <input type="text">
+	name
+	readonly
+	size
+	maxlength
+	tabindex
+	value
+
+password field <input type="password">
+	name
+	readonly
+	size
+	maxlength
+	tabindex
+	value
+
+hidden field <input type="hidden"> Ko hiển thị ra màn hình
+	name
+	readonly
+	size
+	maxlength
+	tabindex
+	value
+
+checkbox field <input type="checkbox">
+	name
+	value
+	(checked) check sẵn hay ko
+
+radiobutton field <input type="radio">
+	name
+	value
+	(checked)
+
+file upload control upload len server
+	<form action="" method="post" enctype="multipart / form-data" name="">
+		<input type="file">
+
+submit button Nút phát lệnh và gởi dữ liệu
+	<input type="submit" name="" value="">
+
+reset button
+	<input type="reset" name="" value="">
+
+button tổng quát
+	<input type="button" name="" value="" onclick="script">
+
+Multiline textfield
+	<textarea cols="" rows="" disabled name="" readonly tabindex="" wrap="off / physical / virtual">
+
+Combobox - Dropdown box
+	<select name="">
+		<optgroup label="">
+			<option value="">
+
+Phương thức Get
+	Các đối số của form được ghi chèn theo vào đường dẫn URL của thuộc tính action trong tag form
+
+Phương thức post
+	các đối số của form được truyền "ngầm" bên dưới
+
+Value trong tag input
+	button, reset, submit xác định text hiển thị.
+	text, password, hidden xác định giá trị khởi tạo.
+	checkbox, radio, image xác định giá trị tương ứng cho thẻ input, sẽ được gởi khi nhấn submit.
+Name trong tag input
+	chỉ định tên cho tag input.
+	sử dụng trong việc xử lí Javascript, tham chiếu nhận dữ liệu khi submit form.

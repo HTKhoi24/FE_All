@@ -1,0 +1,37 @@
+CSS Inline có độ ưu tiên cao nhất -> CSS Internal -> CSS External
+
+Trong CSS thì độ ưu tiên tên thẻ là ID cao nhất -> class -> tag
+Độ ưu tiên :
+	ID : 100
+	class : 10
+	tag : 0
+
+Muốn xài CSS cho tag p trong div ID div1 vs class section thì gọi #div1.section p
+
+Thường 1 trang web gồm 8 phần
+	header
+	navbar
+	carousel
+	intro
+	profucts
+	banner
+	service
+	footer
+
+Quy tắc BEM để đặt tên class
+
+Bình thường width = content + padding + border + margin
+box-sizing: border-box để bỏ padding khi tính width, margin ko thể bỏ được
+
+Sử dụng global để xác định những giá trị trình duyệt đã định sẵn
+
+Phần Introduction
+p
+div float để nằm ngang
+	div
+		div img này cho float left 50% là được do so vs cha trực tiếp
+		div
+		div
+	div
+		div
+		div

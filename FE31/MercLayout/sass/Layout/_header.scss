@@ -1,0 +1,93 @@
+.header{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    &.headerClass{
+        display: none;
+    }
+    .header__provider{
+        .provider-items{
+            letter-spacing: 1px;
+            margin: 0 $mg-1;
+            a{
+                text-decoration: none;
+                @include styleText($fs-0, $fw-normal, $color-white);
+            }
+            i{
+                width: 15px;
+                height: 18px;
+                border: 1.5px solid $color-white;
+                line-height: 15px;
+                font-size: $fs-1 - 3;
+                text-align: center;
+                color: $color-white;
+            }
+            &:hover{
+                a{
+                    color: $color-blue-1;
+                }
+                i{
+                    border: 1.5px solid $color-blue-1;
+                }
+            }
+        }
+        .provider-deusch{
+            margin-right: $mg-2;
+        }
+    }
+    .header__navbar{
+        .navbar-logo{
+            .navbar-brand{
+                .brand-logo{
+                    margin: 0 $mg-1 + 8 $mg-1;
+                }
+                .brand-logo-name{               
+                }
+            }
+        }
+        .navbar-nav{
+            .nav-item{
+                margin: 0px $mg-1 + 6;
+                .nav-link{
+                    @include styleText($fs-1 + 1, $fw-normal, $color-white);
+                }
+                &:hover{
+                    .nav-link{
+                        color: $color-blue-1;
+                    }
+                    .nav-item-vehicle{
+                        color: $color-white;
+                    }
+                }
+            }
+            .active{
+                .nav-link{
+                    color: $color-blue-1;
+                }
+            }
+        }
+    }
+    @include respond-to('large'){
+        .header__provider{
+            .item-text{
+                display: none;
+            }
+            .provider-items{
+                i{
+                    width: 12px;
+                    height: 15px;
+                    font-size: $fs-1 - 5;
+                    color: $color-white;
+                    margin-right: 0;
+                }
+            }
+            
+            .provider-deusch{
+                font-size: $fs-1 - 3;
+            }
+        }
+    }
+}

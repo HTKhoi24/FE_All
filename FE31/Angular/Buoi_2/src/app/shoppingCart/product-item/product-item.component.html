@@ -1,0 +1,8 @@
+<div class="card p-2">
+    <img style="height:280px;" [src]="product.image" class="w-100" alt="">
+    <p>
+      {{product.description}}
+    </p>
+    <!-- <button class="btn btn-success" (click) = "handleProductChoose()">Cart</button> -->
+    <button mat-raised-button color="primary" (click) = "handleProductChoose()">Cart</button>
+  </div>

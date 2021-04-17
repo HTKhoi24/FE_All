@@ -1,0 +1,69 @@
+CSS - Text
+	Color màu chữ	color: color keywords | color values (color: red | #ff0000)
+
+	Align canh lề	text-align: left | right | center | justify (canh đều 2 bên)
+
+	Decoration
+
+	Indent
+
+CSS - Font
+	Size kích thước chữ	font-size: absolute-size | relative-size | length | percentage
+
+	Family loại font	font-family: family name | generic family (mặc định) (tên font có khoảng trắng phải có "")
+
+	Style kiểu chữ		font-style: normal | italic | oblique
+
+	Weight độ đậm		font-weight normal | bold | bolder | 200 | 300 ... | 900
+
+CSS - List
+	Type dấu hiệu hiển thị trước từng mục		list-style-type: value
+		OL: dicimal decimal-leading-zero lower-roman amenian lower-latin lower-greek
+		UL: disc square circle
+
+	Image hình ảnh hiển thị trước từng mục		list-style-image: <url> | none
+
+CSS - Link
+	:link lket chưa vào
+	:visited lket đã vào
+	:active lket dg được kích hoạt
+	:hover lket dg được rê chuột
+
+CSS - Table
+	border-spacing thay thế cellspacing
+
+	border-collapse kẻ biên separate | collapse
+
+	text-align canh ngang | vertical-align canh dọc
+
+CSS - Box Model
+	width height chiều rộng vs cao của content	width (height) : length | percentage | auto
+
+	padding độ rộng vùng padding	padding - top | bottom | right | left : length | percentage
+		padding: top&bottom right&left
+		padding: top right&left bottom
+		padding: top right bottom left
+
+	margin độ rộng vùng pargin	tương tự padding
+
+	background
+		background-color: color
+		background-image: url | none
+		background-repeat: repeat | repeat-x | repeat-y | no-repeat
+		background-position:
+		background-attachment:
+
+	border
+		border-style: none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset
+		border-color: color | transparent
+		border-width: thin | medium | thick | length
+
+CSS - Layout
+	display cách thức hiển thị nội dung
+		display: block | inline | none
+
+	margin:auto
+
+	position:relative | absolute | fixed
+
+	float: left | right

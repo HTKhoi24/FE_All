@@ -1,0 +1,13 @@
+HTML5
+
+cdn html5shiv w3school để lấy code supp html5shiv
+
+Thẻ ngữ nghĩa
+	<section></section> giống thẻ div
+	article dùng để chứa các bài báo hay post hay tin tức
+	Section lớn nhất, trong đó có div vs article, trong article có thể chưa nhiều article nhỏ hơn section>div>article
+	header page header, header section, header article thường dùng page header thôi
+	footer tương tự
+	nav thay cho div id=navbar
+	aside định nghĩa nội dung bên như quảng cáo hay menu dọc
+	

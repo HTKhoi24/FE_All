@@ -1,0 +1,3 @@
+thẻ meta để tăng khả năng tìm thấy hay SEO cho trang web
+Cú pháp Emmet
+Dùng trỏ + Alt để sửa nhiều vị trí

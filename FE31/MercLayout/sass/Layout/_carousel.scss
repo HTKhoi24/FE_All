@@ -1,0 +1,84 @@
+.myCarousel{
+    .carousel-inner{
+        .carousel-item{
+            height: 900px;
+            position: relative;
+            .carousel-item__caption{
+                position: absolute;
+                top: 20%;
+                left: 8%;
+                z-index: 1;
+                a{
+                    text-decoration: none;
+                    @include styleText(30px, $fw-normal, $color-white);
+                }
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    height: 2px;
+                    width: 60px;
+                    background-color: $color-white;
+                    margin-bottom: $mg-2 - 5;
+                }
+                button{
+                    border-radius: 0;
+                    border: 1px solid $color-black-1 !important;
+                }
+            }
+            .carousel-item__info{
+                position: absolute;
+                bottom: 5%;
+                left: 8%;
+                p{
+                    @include styleText($fs-1, $fw-normal, $color-white);
+                }
+            }
+        }
+        .carousel-item__image{
+            width: 100%;
+            height: 100%;
+        }
+        .item-3{
+            img{
+               // transform: translateY(15%);
+            overflow: hidden;
+            }
+            .carousel-item__caption{
+                a{
+                    color: $color-black-1;
+                }
+                &::before{
+                    background-color: $color-black-1;
+                }
+            }
+        }
+    }
+    .carousel-button-prev{
+        transform: translateX(-40px);
+    }
+    .carousel-button-next{
+        transform: translateX(40px);
+    }
+    @include respond-to('large'){
+        .carousel-inner{
+            .carousel-item{
+                height: 400px;
+                .carousel-item__image{
+                    width: 100%;
+                    height: 100%;
+                }
+                .carousel-item__caption{
+                    a{
+                        font-size: $fs-0;
+                    }
+                }
+            }
+        }
+        .carousel-button-prev{
+            transform: translateX(-20px);
+        }
+        .carousel-button-next{
+            transform: translateX(20px);
+        }
+    }
+}

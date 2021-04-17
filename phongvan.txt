@@ -1,0 +1,12 @@
+bất đồng bộ để làm gì
+
+(a+b) * h/2 = ?
+
+API cong
+API nhan
+API chia
+
+trả lời
+callback function =>
+Promise
+Asyn await

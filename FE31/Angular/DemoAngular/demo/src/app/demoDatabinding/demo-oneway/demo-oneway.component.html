@@ -1,0 +1,19 @@
+<!-- Interpolation -->
+<h1>Hello, {{name}} </h1>
+
+<!-- Property binding -->
+<input type="text" [value] = "name" [disabled] = "disabledInput" />
+
+<!-- Event binding -->
+<br>
+<!-- <input type="text" placeholder="type email" (keyup) = "getEmailHandler($event)" /> -->
+
+<!-- Local reference đặt tên cho thẻ, đại diện cho thẻ trong file: #inputEmail -->
+<input type="text" placeholder="type email" #inputEmail />
+<button class="btn btn-success" (click) = "getEmailByClickHandler(inputEmail.value)">Get Email</button>
+<p class="lead">Email đã nhập : {{email}} </p>
+
+
+<!-- Demo Twoway binding -->
+<input type="text" placeholder="type phone number" [(ngModel)] = "phoneNumber" />
+<p>Phone number: {{phoneNumber}} </p>

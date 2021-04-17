@@ -1,0 +1,62 @@
+.header{
+    @include styleText($fs-1, $fw-normal, $color-black-light);
+    .navbar{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .header__left{
+        display: flex;
+        align-items: center;
+        .navbar-brand{
+            flex-grow: .5;
+            img{
+                width: 110px;
+            }
+        }
+        .categories{
+            flex-grow: .5;
+        }
+        .searchForm{
+            flex-grow: 6;
+
+            @include styleSearch($color-white-cream,$color-white-cream,$color-white-0,$color-white-cream);
+
+            // .input-group{
+            //     background-color: $color-white-cream;
+            //     border: 1px solid $color-white-cream;
+            //     .form-control{
+            //         background-color: transparent;
+            //         border: 1px solid transparent;
+            //         &:focus{
+            //             outline: none;
+            //             box-shadow: none;
+            //             background-color: $color-white-0;
+            //             border-top: 1px solid $color-white-cream;
+            //             border-bottom: 1px solid $color-white-cream;
+            //             border-left: 1px solid $color-white-cream;
+
+            //             & + .input-group-append{
+            //                 .input-group-text{
+            //                     background-color: $color-white-0;
+            //                     border-top: 1px solid $color-white-cream;
+            //                     border-bottom: 1px solid $color-white-cream;
+            //                     border-right: 1px solid $color-white-cream;
+            //                     &:hover{
+            //                         @include hoverButton($color-red-0, $color-white-0, $color-red-0)
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //     }
+            //     .input-group-text{
+            //         background-color: transparent;
+            //         border: 1px solid transparent;
+            //         color: $color-red-0;
+            //         &:hover{
+            //             @include hoverButton($color-red-0, $color-white-0, $color-red-0)
+            //         }
+            //     }
+            // }
+        }
+    }
+}

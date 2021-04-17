@@ -1,0 +1,65 @@
+.myFooter{
+    background-color: $color-black-2;
+    .footer-content{
+        .footer-brand{
+            border-top: 1px solid $color-grey-2;
+            margin-bottom: $mg-2;
+            img{
+                padding: 20px 10%;
+            }
+        }
+        .footer-menu{
+            @include styleText($fs-1, $fw-normal, $color-grey-3);
+            .footer-english{
+                text-align: center;
+                span{
+                    padding: 0 $pd-1;
+                    color: $color-white;
+                }
+                .footer__deutsh{
+                    border-right: 2px solid $color-grey-2;
+                    a{
+                        @include styleText($fs-1, $fw-normal, $color-grey-3);
+                    }
+                    &:hover{
+                        a{
+                            text-decoration: none;
+                        color: $color-blue-1;
+                        }
+                    }
+                }
+            }
+            .footer-nav{
+                span{
+                    a{
+                        color: $color-grey-3;
+                        font-size: $fs-1;
+                        text-decoration: none;
+                        padding: 0 $pd-1;
+                    }
+                    &:hover{
+                        a{
+                            text-decoration: none;
+                        color: $color-blue-1;
+                        }
+                    }
+                }
+            }
+            .back-top{
+                text-align: right;
+                a{
+                    text-decoration: none;
+                    @include styleText($fs-2 - 3, $fw-normal, $color-grey-3);
+                }
+                i{
+                    font-size: $fs-2;
+                }
+                &:hover{
+                    a{
+                        color:  $color-blue-1;
+                    }
+                }
+            }
+        }
+    }    
+}

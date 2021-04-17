@@ -1,0 +1,39 @@
+Sử dụng màu rgba (0, 1, 2, 3) để xác định màu	3 là để xác định độ trong suốt
+
+Dùng rem trong font-size để xác định cỡ chữ, rem là 1 đơn vị tương đối
+trong đó nó sẽ xác định theo size đã định nghĩa lúc đầu.
+	vd lúc đầu khai font-size là 10px thì 1 rem sẽ là 10px.
+Mặc định 1 rem = 16px
+
+display flex để các mục con canh cùng 1 hàng
+justify-content: space-around để canh đều các con ra	space-between thì bên trái sát lề, canh đều ra	
+canh theo chiều ngang
+align-items: center
+canh theo chiều dọc
+
+letter-spacing khoảng cách giữa các kí tự
+
+Khi nào cần sử dụng:
+	float khi dùng trình duyệt cũ 
+	flex khi nội dung đơn giản dễ làm
+	grid khi nội dung phức tạp hơn và có thể chia như table
+
+Gắn link js ở cuối body vì load html lẹ hơn, lúc này html đã được xây dựng nên js dễ tìm hơn
+và để nếu js có bị lỗi thì cg vẫn load dc trang web, chỉ ko có hiệu ứng
+
+jquery cung cấp hàm cho các thư viện khác
+
+js countup cần hàm từ thư viện waypoint vs js nên để sau waypoint vs thư viện js
+
+<script>
+      $('.counter').countUp();
+  </script>
+Để ở sau countup vì cần dùng thư viện countup
+
+line-height canh giữa cho 1 dòng text, để canh giữa thì để giá trị bằng height
+		canh khoảng cách giữa 2 dòng text
+
+Thư viện Carousel
+
+slick cho bài tập 21/9
+wow slider
